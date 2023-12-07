@@ -12,7 +12,7 @@ bundle install
 bundle exec rake
 ```
 
-Check that the last build succeeded in [Travis CI](https://travis-ci.org/mongoid/mongoid-locker) for all supported platforms.
+Check that the last build succeeded in [GitHub Actions](https://github.com/mongoid/mongoid-locker/actions) for all supported platforms.
 
 Check the version, if needed modify [lib/mongoid/locker/version.rb](lib/mongoid/locker/version.rb).
 
@@ -48,16 +48,15 @@ Pushed mongoid-locker 0.4.0 to rubygems.org.
 
 ### Prepare for the Next Version
 
+Increment the minor version, modify [lib/mongoid-locker/version.rb](lib/mongoid-locker/version.rb).
+
 Add the next release to [CHANGELOG.md](CHANGELOG.md).
 
 ```
-Next Release
-============
+### 0.4.1 (Next)
 
 * Your contribution here.
 ```
-
-Increment the minor version, modify [lib/mongoid-locker/version.rb](lib/mongoid-locker/version.rb).
 
 Commit your changes.
 

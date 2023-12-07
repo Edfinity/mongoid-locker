@@ -4,6 +4,8 @@ source 'https://rubygems.org'
 gemspec
 
 case ENV['MONGOID_VERSION']
+when /^8/
+  gem 'mongoid', '~> 8.0'
 when /^7/
   gem 'mongoid', '~> 7.0'
 when /^6/
@@ -24,7 +26,7 @@ group :development, :test do
   gem 'pry-byebug', platforms: :mri
 
   gem 'mongoid-compatibility'
-  gem 'mongoid-danger', '~> 0.1.1'
+  gem 'mongoid-danger', '~> 0.2.0'
   gem 'rspec', '~> 3.9'
   gem 'rubocop', '0.81.0'
   gem 'rubocop-rspec', '1.38.1'

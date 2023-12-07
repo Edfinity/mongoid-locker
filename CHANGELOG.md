@@ -1,33 +1,42 @@
 ## Changelog
 
-### 2.0.2 (Next)
+### 2.0.3 (Next)
 
-* [#92](https://github.com/mongoid/mongoid-locker/pull/92): Remove TTL and update unique index definitions - [@cesarizu](https://github.com/cesarizu).
+* [#102](https://github.com/mongoid/mongoid-locker/pull/102): Re-added danger, removed Travis-CI config, extracted RuboCop - [@dblock](https://github.com/dblock).
+* [#104](https://github.com/mongoid/mongoid-locker/pull/104): Fixed code coverage - [@dblock](https://github.com/dblock).
+* [#101](https://github.com/mongoid/mongoid-locker/pull/101): Replace the $where operator with the $expr operator - [@amanfrinati](https://github.com/amanfrinati).
 * Your contribution here.
+
+### 2.0.2 (2023-01-24)
+
+* [#92](https://github.com/mongoid/mongoid-locker/pull/92): Removed TTL and updated unique index definitions - [@cesarizu](https://github.com/cesarizu).
+* [#96](https://github.com/mongoid/mongoid-locker/pull/96): `new Date()` replaced by `Time.now.utc` - [@rsosag](https://github.com/rsosag).
+* [#96](https://github.com/mongoid/mongoid-locker/pull/96): Update the use of the `change` method in tests - [@rsosag](https://github.com/rsosag).
+* [#97](https://github.com/mongoid/mongoid-locker/pull/97): Added support for mongoid 8.0.x versions - [@randikabanura](https://github.com/randikabanura).
 
 ### 2.0.1 (2020-06-17)
 
 * [#86](https://github.com/mongoid/mongoid-locker/pull/86): Upgraded to RuboCop 0.81.0 - [@dks17](https://github.com/dks17).
 * [#86](https://github.com/mongoid/mongoid-locker/pull/86): Fixed issue with `ruby` `delegate` method - [@dks17](https://github.com/dks17).
-* [#86](https://github.com/mongoid/mongoid-locker/pull/86): Update Ruby and JRUby versions for Travis config - [@dks17](https://github.com/dks17).
-* [#88](https://github.com/mongoid/mongoid-locker/pull/88): Add RSpec test examples - [@dks17](https://github.com/dks17).
+* [#86](https://github.com/mongoid/mongoid-locker/pull/86): Updated Ruby and JRUby versions for Travis config - [@dks17](https://github.com/dks17).
+* [#88](https://github.com/mongoid/mongoid-locker/pull/88): Added RSpec test examples - [@dks17](https://github.com/dks17).
 
 ### 2.0.0 (2019-10-23)
 
-* [#79](https://github.com/mongoid/mongoid-locker/pull/79): Update find_and_lock and find_and_unlock methods - [@dks17](https://github.com/dks17).
-* [#78](https://github.com/mongoid/mongoid-locker/pull/78): Upgrade to v2.0 - [@dks17](https://github.com/dks17).
+* [#79](https://github.com/mongoid/mongoid-locker/pull/79): Updated find_and_lock and find_and_unlock methods - [@dks17](https://github.com/dks17).
+* [#78](https://github.com/mongoid/mongoid-locker/pull/78): Upgraded to v2.0 - [@dks17](https://github.com/dks17).
 * [#83](https://github.com/mongoid/mongoid-locker/pull/83): Upgraded to RuboCop 0.75.1 - [@dblock](https://github.com/dblock).
 
 ### 1.0.1 (2019-03-23)
 
-* [#74](https://github.com/mongoid/mongoid-locker/pull/74): Add JRuby tests - [@dks17](https://github.com/dks17).
+* [#74](https://github.com/mongoid/mongoid-locker/pull/74): Added JRuby tests - [@dks17](https://github.com/dks17).
 * [#68](https://github.com/mongoid/mongoid-locker/pull/68): Fix Rubocop offenses, refactoring, update `ruby` versions, add `COVERAGE` test env, update `.travis.yml` matrix - [@dks17](https://github.com/dks17).
-* [#67](https://github.com/mongoid/mongoid-locker/pull/67): Deprecate `:wait` in favor of `:retries` option, which can attempt to grab a lock multiple times - [@afeld](https://github.com/afeld), [@dks17](https://github.com/dks17).
+* [#67](https://github.com/mongoid/mongoid-locker/pull/67): Deprecated `:wait` in favor of `:retries` option, which can attempt to grab a lock multiple times - [@afeld](https://github.com/afeld), [@dks17](https://github.com/dks17).
 * [#66](https://github.com/mongoid/mongoid-locker/pull/66): Fix Mongoid::Locker::LockError for not persisted document - [@dks17](https://github.com/dks17).
-* [#65](https://github.com/mongoid/mongoid-locker/pull/65): Drop `mongoid-compatibility` gem dependency - [@dks17](https://github.com/dks17).
+* [#65](https://github.com/mongoid/mongoid-locker/pull/65): Dropped `mongoid-compatibility` gem dependency - [@dks17](https://github.com/dks17).
 * [#64](https://github.com/mongoid/mongoid-locker/pull/64): Exclude demo files from the gem - [@dks17](https://github.com/dks17).
-* [#60](https://github.com/mongoid/mongoid-locker/pull/60): Drop support for `mongoid` version `2` and `3` - [@dks17](https://github.com/dks17).
-* [#60](https://github.com/mongoid/mongoid-locker/pull/60): Add SimpleCov - [@dks17](https://github.com/dks17).
+* [#60](https://github.com/mongoid/mongoid-locker/pull/60): Dropped support for `mongoid` version `2` and `3` - [@dks17](https://github.com/dks17).
+* [#60](https://github.com/mongoid/mongoid-locker/pull/60): Added SimpleCov - [@dks17](https://github.com/dks17).
 
 ### 1.0.0 (2018-09-02)
 
